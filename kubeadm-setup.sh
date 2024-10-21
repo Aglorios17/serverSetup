@@ -15,4 +15,4 @@ sudo apt install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 kubeadm version
 echo "######## KubeAdm install finished ########"
-sudo reboot
+#sudo reboot
