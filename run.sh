@@ -4,5 +4,6 @@ echo "##### COPY CONFIG"
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
+export KUBECONFIG=/etc/kubernetes/admin.conf
 echo "##### COPY NETWORK ADDONS"
-kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+kubectl --kubeconfig=$KUBECONFIG apply -f https://docs.projectcalico.org/manifests/calico.yaml
