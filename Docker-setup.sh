@@ -10,4 +10,4 @@ sudo docker --version
 sudo docker run hello-world
 sudo usermod -aG docker $USER
 echo " ######### Docker install finished #########"
-sudo reboot
+#sudo reboot
