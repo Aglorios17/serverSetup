@@ -8,7 +8,6 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo docker --version
 sudo docker run hello-world
 sudo usermod -aG docker $USER
-su - $USER
 sudo systemctl enable docker
 echo " ######### Docker install finished #########"
 #sudo reboot
