@@ -15,11 +15,10 @@ echo "# Install Docker:"
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 echo "# Verify that Docker is installed correctly by running the hello-world image:"
 sudo docker run hello-world
-echo "# Add your user to the docker group:"
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker
-docker run hello-world
 echo "# Enable and start the Docker service:"
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
+echo "# Add your user to the docker group:"
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
